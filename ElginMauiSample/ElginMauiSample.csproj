@@ -49,4 +49,45 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\adm.png" />
+	  <None Remove="Resources\Images\balanca.png" />
+	  <None Remove="Resources\Images\barCodeL.png" />
+	  <None Remove="Resources\Images\card.png" />
+	  <None Remove="Resources\Images\codeBar.png" />
+	  <None Remove="Resources\Images\Elgin\bannerelginsmall.png" />
+	  <None Remove="Resources\Images\Elgin\elginpay_logo.png" />
+	  <None Remove="Resources\Images\Elgin\elgin_logo_default_print_image.png" />
+	  <None Remove="Resources\Images\elgin_balanca.png" />
+	  <None Remove="Resources\Images\elgin_i9_full.png" />
+	  <None Remove="Resources\Images\msitefL.png" />
+	  <None Remove="Resources\Images\nfce.png" />
+	  <None Remove="Resources\Images\printerBarCode.jpg" />
+	  <None Remove="Resources\Images\printerImage.jpg" />
+	  <None Remove="Resources\Images\printerL.png" />
+	  <None Remove="Resources\Images\printerText.jpg" />
+	  <None Remove="Resources\Images\QRCodeGithubElgin.png" />
+	  <None Remove="Resources\Images\RediCodeEan13.png" />
+	  <None Remove="Resources\Images\satL.png" />
+	  <None Remove="Resources\Images\sat_elgin.png" />
+	  <None Remove="Resources\Images\status.png" />
+	  <None Remove="Resources\Images\store.png" />
+	  <None Remove="Resources\Images\voucher.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Elgin\elgin_logo_default_print_image.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Elgin\bannerelginsmall.png" />
+	  <MauiImage Include="Resources\Images\Elgin\elginpay_logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\PrinterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

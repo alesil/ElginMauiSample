@@ -1,24 +1,52 @@
-﻿namespace ElginMauiSample;
+﻿//using static Android.Media.Audiofx.DynamicsProcessing;
+
+namespace ElginMauiSample;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+    //int count = 0;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+    public MainPage()
+    {
+        InitializeComponent();
+    }
+    async void OpenE1BridgePage(object sender, EventArgs e)
+    {
+        //await Navigation.PushAsync(new E1BridgePage());
+    }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    async void OpenNfcePage(object sender, EventArgs e)
+    {
+        //await Navigation.PushAsync(new NFCEPage());
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+    async void OpenPrinterPage(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Pages.PrinterPage("interna"));
+    }
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    async void OpenBarCodePage(object sender, EventArgs e)
+    {
+        //await Navigation.PushAsync(new BarCodesPage());
+    }
+    async void OpenBalancaPage(object sender, EventArgs e)
+    {
+        //await Navigation.PushAsync(new BalancaPage());
+    }
+
+    async void OpenTefPage(object sender, EventArgs e)
+    {
+        //await Navigation.PushAsync(new TefPage());
+    }
+
+    async void OpenCarteiraDigitalPage(object sender, EventArgs e)
+    {
+        //await Navigation.PushAsync(new CarteiraDigitalPage());
+    }
+
+    async void OpenSatPage(object sender, EventArgs e)
+    {
+        //await Navigation.PushAsync(new SatPage());
+    }
 }
 
